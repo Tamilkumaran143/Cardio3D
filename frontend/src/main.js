@@ -621,7 +621,7 @@ async function checkBackendConnection() {
     status.textContent = `Backend connected · ${count} prediction models available.`;
   } catch {
     status.dataset.state = "offline";
-    status.textContent = "Backend unavailable · start FastAPI at https://cardio3d-api.onrender.com.";
+    status.textContent = "Backend unavailable · start FastAPI at http://127.0.0.1:8000.";
   }
 }
 
